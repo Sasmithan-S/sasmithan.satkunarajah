@@ -1,0 +1,91 @@
+/*selecteur universel*/
+*{  margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    background-color: #131416;
+    font-family: sans-serif; /* sasn sérif pr police de secour si ordi charge pas les autres*/
+}
+
+
+
+.bloc1 h1 {
+    font-size: 45px;
+   /* text-align: left; */
+
+
+}
+
+.nom_prénom {
+    margin-left: 70px;
+ margin: 100px;
+    
+}
+
+.coul {
+    color:blueviolet;
+}
+
+
+
+
+.bloc1{
+    padding:15px;
+    display : flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: Arial, sans-serif;
+    gap:10px;
+
+    
+}
+
+
+.photo_1{
+    border-radius:50%;
+    width: 230px;
+    margin-bottom:10px;
+}
+
+
+
+.lien_cp2i{
+    color:black;
+    font-style: italic;
+}
+.bouton_bas_cv{
+    transition: backgroun 0.3s ease-in;
+    color : white;
+    background-color:grey;
+    padding:10px 20px; /*case haut bas gauche droite*/ 
+  /*  text-decoration: none; /*pour enlever surlignement*/
+    font-size: 18px;
+    margin-top:20px;
+    
+    cursor:pointer; /*curseur animation*/
+    border-radius: 9px; /*bord arrondis*/
+    font-weight: bold; /*met en gras*/
+   transition: background-color 0.3s ease; /*la transition active que si hover mache*/
+     
+}
+
+.bouton_1{
+   
+    display: flex;
+    padding: 10px;
+gap: 10px;
+
+}
+
+.bouton_bas_cv:hover{
+    background-color: #606060;
+}
+
+#page_bas{
+    padding:20px;
+}

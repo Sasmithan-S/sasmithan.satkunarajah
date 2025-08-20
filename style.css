@@ -1,0 +1,274 @@
+/*selecteur universel*/
+*{  margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color:aliceblue;
+}
+body {
+   background-color: #131416;
+    font-family: sans-serif; /* sasn sérif pr police de secour si ordi charge pas les autres*/
+    
+}
+
+
+
+.bloc1 h1 {
+    font-size: 45px;
+   /* text-align: left; */
+
+
+}
+
+.nom_prénom {
+    margin-left: 70px;
+ margin: 100px;
+    
+}
+
+.coul {
+    color:blueviolet;
+}
+
+
+
+
+.bloc1{
+    
+    padding:15px;
+    display : flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: Arial, sans-serif;
+    gap:40px;
+
+    
+}
+
+
+
+
+.photo_1{
+    border-radius:50%;
+    width: 230px;
+    margin-bottom:10px;
+}
+
+
+
+.lien_cp2i{
+  
+    font-style: italic;
+}
+
+
+
+
+.bouton_bas{
+    color:white;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    width: 150px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px solid #892cdc;
+    overflow: hidden;
+    position:relative;
+   z-index: 0;
+     transform: translateZ(0);
+}
+
+
+.bouton_bas::before{
+    content:"";
+    position:absolute;
+    top:55px;
+    width: 100%;
+    height: 100%;
+    left:0;
+    background-color: #892cdc;
+    border-radius: 50% 50% 0% 0%;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+.bouton_bas:hover::before
+{
+    top:0px;
+    border-radius: 0%;
+    
+}
+
+
+.bouton_1{
+   
+    display: flex;
+    padding: 10px;
+    gap: 50px;
+
+}
+
+
+.box{
+    display: flex;
+}
+
+
+#checkbox {
+    width: 20px;
+    height: 20px;
+     cursor: pointer;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: #131416 ;
+  position: relative;
+}
+
+#checkbox:hover, .menu .menuItems:hover{
+    background: rgba(255,255,255,0.7);
+}
+#checkbox::before{
+     content: '\f1e0';
+       font-family: 'font awesome 5 free';
+     font-weight: 700;
+     font-size: 1rem;
+     position: absolute;
+       top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1.5s;
+}
+#checkbox:checked::before{
+    content: "\f00d";
+}
+#checkbox:checked ~ .menu{
+width: 21px;
+}
+
+.menu{
+    width: 0;
+    display: flex;
+    overflow:hidden;
+    transition: all 0.5s;
+
+}
+.menu .menuItems{
+width: 20px;
+height: 20px;
+background:#131416;
+border-left: 1px solid rgb(165,165,165);
+display:flex;
+align-items: center;
+justify-content: center;
+
+}
+.menu .menuItems i {
+    font-size: 1em;
+}
+.fa-linkedin{
+    color:#0077B5;
+} 
+#page_bas{
+    padding:20px;
+}
+
+.bloc-projet{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    padding: 60px;
+    font-family: Arial, sans-serif;
+
+}
+
+.vitrine{
+     display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;  /* espace entre flèches et projets */
+  margin-top: 20px;
+}
+
+.flèche {
+    color:white;
+    cursor: pointer;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border: 1px solid #892cdc;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    z-index:0;
+    overflow: hidden;
+    transform: translateZ(0);  
+    position: relative;
+}
+
+.flèche::before{
+    content:"";
+    position:absolute;
+    top:55px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    left:0;
+    background-color: #808080;
+    border-radius: 50% 50% 0% 0%;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+.flèche:hover::before {
+  top:0%;
+  border-radius: 0%;
+
+}
+
+#listeProjets {
+  display: flex;
+  gap: 30px;           
+  overflow-x: auto;     
+  width: 1000px;         
+  height: 400px;         
+  margin-top: 30px;
+  padding-bottom: 10px;  
+  overflow-x:auto;
+  
+}
+
+.projet {
+  width: 300px;          
+  height: 380px;         
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  flex-shrink: 0; 
+   }      
+
+
+.presentationProjet {
+  display: flex;
+  font-size: 10px;
+  font-family: Arial, sans-serif;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  height: 100%; 
+  padding-top: 20px; 
+  gap: 8px;
+}
+.presentationProjet h2 {
+    font-size: 20px;
+}
