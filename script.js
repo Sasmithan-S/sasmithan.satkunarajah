@@ -3,7 +3,7 @@
 const contenu = document.getElementById("listeProjets");
 
 let c=0;
-for(let j=0;j<10; j++)
+for(let j=0;j<2; j++)
 {
 const element = document.createElement("div");
 element.className = "projet" ;
@@ -26,7 +26,21 @@ flècheGauche.addEventListener("click", function()
     );
 
 
+
+
+
  const projet1 = document.querySelector('.projet')
+
+ const projets = document.querySelectorAll('.projet');
+
+
+ if (projets.length<=2)
+ {
+    contenu.style.justifyContent="center";
+
+ }
+
+
 projet1.innerHTML = 
 ` <div class = "presentationProjet">
 <h2>Jeu R-Type</h2>
