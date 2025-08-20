@@ -210,6 +210,7 @@ justify-content: center;
     overflow: hidden;
     transform: translateZ(0);  
     position: relative;
+    flex-shrink: 0; 
 }
 
 .flèche::before{
