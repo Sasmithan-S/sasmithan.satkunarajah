@@ -47,7 +47,7 @@ projet1.innerHTML =
 <p>Language: C++</p>
 <p>Bibiliothèque graphique LibTableauNoir</p>  
 <img class="photo_1" src="R-type.png" />
-<a class="bouton_bas" href="Satkunarajah_Sasmithan.zip" download="CV.pdf">Télécharger (zip)</a>
+<a class="bouton_bas" href="Satkunarajah_Sasmithan.zip" download="R-Type">Télécharger (zip)</a>
 </div>
   
 `;
