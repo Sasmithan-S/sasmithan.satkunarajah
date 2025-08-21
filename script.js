@@ -3,7 +3,7 @@
 const contenu = document.getElementById("listeProjets");
 
 let c=0;
-for(let j=0;j<2; j++)
+for(let j=0;j<3; j++)
 {
 const element = document.createElement("div");
 element.className = "projet" ;
@@ -29,8 +29,6 @@ flècheGauche.addEventListener("click", function()
 
 
 
- const projet1 = document.querySelector('.projet')
-
  const projets = document.querySelectorAll('.projet');
 
 
@@ -41,14 +39,36 @@ flècheGauche.addEventListener("click", function()
  }
 
 
-projet1.innerHTML = 
+projets[0].innerHTML = 
 ` <div class = "presentationProjet">
 <h2>Jeu R-Type</h2>
 <p>Language: C++</p>
 <p>Bibiliothèque graphique LibTableauNoir</p>  
-<img class="photo_1" src="R-type.png" />
+<img class="photo_jeux" src="R-type.png" />
 <a class="bouton_bas" href="Satkunarajah_Sasmithan.zip" download="R-Type">Télécharger (zip)</a>
 </div>
   
 `;
+
+projets[1].innerHTML = 
+` <div class = "presentationProjet">
+<h2>Jeu shadow fight</h2>
+<p>Language: python</p>
+<p>Bibiliothèque pygame, 2O23</p>  
+<img class="photo_jeux" src="screen-shadow.png" />
+<a class="bouton_bas" href="shadow.zip" download="shadow-fight">Télécharger (zip)</a>
+</div>
+  
+`;
+projets[2].innerHTML = 
+` <div class = "presentationProjet">
+<h2>site avec chatbot</h2>
+<p>Language: html,css,js</p>
+<p> réalisé en 2022</p>  
+<img class="photo_jeux" src="screen-nsi.png" />
+<a class="bouton_bas" href="nsi.zip" download="nsi">Télécharger (zip)</a>
+</div>
+  
+`;
+
     
