@@ -51,11 +51,14 @@ body {
 
 
 
-.photo_1{
-    border-radius:50%;
-    width: 230px;
-    margin-bottom:10px;
+.photo_1 {
+    width: 200px;
+    height: 200px;         
+    border-radius: 50%;
+    object-fit: cover;     
+    display: block;
 }
+
 
 .photo_jeux{
     height: 150px;
@@ -65,11 +68,6 @@ body {
 }
 
 
-
-.lien_cp2i{
-  
-    font-style: italic;
-}
 
 
 
