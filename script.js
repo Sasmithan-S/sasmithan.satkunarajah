@@ -42,7 +42,7 @@ projets[0].innerHTML =
 <h2>Flood-it</h2>
 <p>Language: C++</p>
 <p>Solveur du jeu optimisé, 2025</p>  
-<img class="photo_jeux" src="Projet_floodit/Img.png" />
+<img class="photo_jeux" src="Img.png" />
 <a class="bouton_bas" href="Projet_Floodit.zip" download="Flood-It">Télécharger (zip)</a>
 </div>
   
