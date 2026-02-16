@@ -3,7 +3,7 @@
 const contenu = document.getElementById("listeProjets");
 
 let c=0;
-for(let j=0;j<3; j++)
+for(let j=0;j<4; j++)
 {
 const element = document.createElement("div");
 element.className = "projet" ;
@@ -32,14 +32,23 @@ flècheGauche.addEventListener("click", function()
  const projets = document.querySelectorAll('.projet');
 
 
- if (projets.length<=2)
+ if (projets.length<=4)
  {
     contenu.style.justifyContent="center";
 
  }
-
-
 projets[0].innerHTML = 
+` <div class = "presentationProjet">
+<h2>Flood-it</h2>
+<p>Language: C++</p>
+<p>Solveur du jeu optimisé, 2025</p>  
+<img class="photo_jeux" src="Projet_floodit/Img.png" />
+<a class="bouton_bas" href="Projet_Floodit.zip" download="Flood-It">Télécharger (zip)</a>
+</div>
+  
+`;
+
+projets[1].innerHTML = 
 ` <div class = "presentationProjet">
 <h2>Jeu R-Type</h2>
 <p>Language: C++</p>
@@ -50,7 +59,7 @@ projets[0].innerHTML =
   
 `;
 
-projets[1].innerHTML = 
+projets[2].innerHTML = 
 ` <div class = "presentationProjet">
 <h2>Jeu shadow fight</h2>
 <p>Language: python</p>
@@ -60,7 +69,7 @@ projets[1].innerHTML =
 </div>
   
 `;
-projets[2].innerHTML = 
+projets[3].innerHTML = 
 ` <div class = "presentationProjet">
 <h2>site avec chatbot</h2>
 <p>Language: html,css,js</p>
