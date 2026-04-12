@@ -34,7 +34,7 @@ flècheGauche.addEventListener("click", function()
 
  if (projets.length<=4)
  {
-    contenu.style.justifyContent="center";
+    contenu.style.justifyContent="flex-start";
 
  }
 projets[0].innerHTML = 
