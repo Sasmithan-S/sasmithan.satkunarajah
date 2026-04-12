@@ -3,7 +3,7 @@
 const contenu = document.getElementById("listeProjets");
 
 let c=0;
-for(let j=0;j<4; j++)
+for(let j=0;j<5; j++)
 {
 const element = document.createElement("div");
 element.className = "projet" ;
@@ -32,12 +32,24 @@ flècheGauche.addEventListener("click", function()
  const projets = document.querySelectorAll('.projet');
 
 
- if (projets.length<=4)
+ if (projets.length<=5)
  {
     contenu.style.justifyContent="flex-start";
 
  }
-projets[0].innerHTML = 
+
+ projets[0].innerHTML = 
+` <div class = "presentationProjet">
+<h2>Patrick's Parabox</h2>
+<p>Language: Java</p>
+<p>Implémentation d'un Sokoban, (en cours depuis 02/2026)</p>  
+<img class="photo_jeux" src="photo_patrick's.png" />
+<a class="bouton_bas" href="https://gitlab.sorbonne-paris-nord.fr/12401817/ue-projet" target="_blank">Lien Git</a> </div>
+</div>
+  
+`;
+
+projets[1].innerHTML = 
 ` <div class = "presentationProjet">
 <h2>Flood-it</h2>
 <p>Language: C++</p>
@@ -48,7 +60,7 @@ projets[0].innerHTML =
   
 `;
 
-projets[1].innerHTML = 
+projets[2].innerHTML = 
 ` <div class = "presentationProjet">
 <h2>Jeu R-Type</h2>
 <p>Language: C++</p>
@@ -59,7 +71,7 @@ projets[1].innerHTML =
   
 `;
 
-projets[2].innerHTML = 
+projets[3].innerHTML = 
 ` <div class = "presentationProjet">
 <h2>Jeu shadow fight</h2>
 <p>Language: python</p>
@@ -69,7 +81,7 @@ projets[2].innerHTML =
 </div>
   
 `;
-projets[3].innerHTML = 
+projets[4].innerHTML = 
 ` <div class = "presentationProjet">
 <h2>site avec chatbot</h2>
 <p>Language: html,css,js</p>
