@@ -5,24 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Me contacter - Sasmithan</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <script defer src="contact.js"></script>
 </head>
 
 <body>
 
   <div class="bloc-contact">
+    <i class="fa-solid fa-envelope icone-titre"></i>
     <h1>Me contacter</h1>
 
     <p class="intro_texte">Une question, une opportunité d'alternance ou
       simplement envie d'échanger ? N'hésitez pas à m'écrire, je réponds
       rapidement.</p>
 
-    <form id="formContact" class="form-contact">
-      <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
-      <input type="email" id="email" name="email" placeholder="Votre email" required />
-      <textarea id="message" name="message" placeholder="Votre message" rows="6" required></textarea>
-      <button type="submit" class="bouton_bas">Envoyer</button>
-    </form>
+    <div class="carte-contact">
+      <form id="formContact" class="form-contact">
+        <div class="champ">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
+        </div>
+
+        <div class="champ">
+          <i class="fa-solid fa-at"></i>
+          <input type="email" id="email" name="email" placeholder="Votre email" required />
+        </div>
+
+        <div class="champ champ-message">
+          <i class="fa-solid fa-message"></i>
+          <textarea id="message" name="message" placeholder="Votre message" rows="6" required></textarea>
+        </div>
+
+        <button type="submit" class="bouton-envoyer">
+          Envoyer <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
 
     <a class="bouton_bas" href="index.html">← Retour</a>
   </div>
