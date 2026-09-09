@@ -5,14 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Me contacter - Sasmithan</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <script defer src="contact.js"></script>
 </head>
 
 <body>
 
   <div class="bloc-contact">
-    <i class="fa-solid fa-envelope icone-titre"></i>
+    <svg class="icone-titre" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+      <rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/>
+      <path d="M3.5 6.5 12 13l8.5-6.5"/>
+    </svg>
     <h1>Me contacter</h1>
 
     <p class="intro_texte">Une question, une opportunité d'alternance ou
@@ -22,27 +24,39 @@
     <div class="carte-contact">
       <form id="formContact" class="form-contact">
         <div class="champ">
-          <i class="fa-solid fa-user"></i>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <circle cx="12" cy="8" r="3.5"/>
+            <path d="M4.5 20c1.4-4 4.2-6 7.5-6s6.1 2 7.5 6"/>
+          </svg>
           <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
         </div>
 
         <div class="champ">
-          <i class="fa-solid fa-at"></i>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/>
+            <path d="M3.5 6.5 12 13l8.5-6.5"/>
+          </svg>
           <input type="email" id="email" name="email" placeholder="Votre email" required />
         </div>
 
         <div class="champ champ-message">
-          <i class="fa-solid fa-message"></i>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M3 5.5h18v11H8.5L3 21z"/>
+          </svg>
           <textarea id="message" name="message" placeholder="Votre message" rows="6" required></textarea>
         </div>
 
         <button type="submit" class="bouton-envoyer">
-          Envoyer <i class="fa-solid fa-paper-plane"></i>
+          Envoyer
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M21 3 3 10.5l7.5 3L14 21z"/>
+            <path d="M21 3 10.5 13.5"/>
+          </svg>
         </button>
       </form>
     </div>
 
-    <a class="bouton_bas" href="index.html">← Retour</a>
+    <a class="lien-retour" href="index.html">← Retour à l'accueil</a>
   </div>
 
 </body>

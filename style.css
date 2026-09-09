@@ -303,7 +303,8 @@ body {
 }
 
 .icone-titre {
-    font-size: clamp(30px, 8vw, 40px);
+    width: clamp(30px, 8vw, 38px);
+    height: clamp(30px, 8vw, 38px);
     color: #892cdc;
     margin-bottom: 4px;
 }
@@ -322,11 +323,10 @@ body {
     width: 100%;
     max-width: 480px;
     background-color: #1a1b1e;
-    border: 1px solid rgba(137, 44, 220, 0.35);
-    border-radius: 16px;
-    padding: clamp(24px, 5vw, 36px);
-    box-shadow: 0 0 40px rgba(137, 44, 220, 0.12);
-    margin-bottom: 10px;
+    border: 1px solid #292a2e;
+    border-radius: 14px;
+    padding: clamp(22px, 5vw, 34px);
+    margin-bottom: 20px;
 }
 
 .form-contact {
@@ -343,15 +343,16 @@ body {
     text-align: left;
 }
 
-.champ i {
+.champ svg {
     position: absolute;
     left: 15px;
+    width: 16px;
+    height: 16px;
     color: #892cdc;
-    font-size: 15px;
     pointer-events: none;
 }
 
-.champ-message i {
+.champ-message svg {
     top: 16px;
     align-self: flex-start;
 }
@@ -403,10 +404,26 @@ body {
     transition: background-color 0.3s, transform 0.15s;
 }
 
+.bouton-envoyer svg {
+    width: 16px;
+    height: 16px;
+}
+
 .bouton-envoyer:hover {
     background-color: #a44bf0;
 }
 
 .bouton-envoyer:active {
     transform: scale(0.97);
+}
+
+.lien-retour {
+    color: rgba(240, 248, 255, 0.6);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.lien-retour:hover {
+    color: #a44bf0;
 }
