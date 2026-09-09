@@ -51,6 +51,17 @@ body {
 
 
 
+.intro_texte {
+    max-width: 600px;
+}
+
+@media (max-width: 768px) {
+    .intro_texte {
+        text-align: center;
+        max-width: 90%;
+    }
+}
+
 .photo_1 {
     width: 200px;
     height: 200px;         
