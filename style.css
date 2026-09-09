@@ -288,3 +288,56 @@ body {
         gap: 16px;
     }
 }
+
+.bloc-contact {
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    gap: clamp(20px, 5vw, 30px);
+    text-align: center;
+    width: 100%;
+}
+
+.bloc-contact h1 {
+    font-size: clamp(28px, 8vw, 45px);
+}
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-contact input,
+.form-contact textarea {
+    background-color: #131416;
+    border: 1px solid #892cdc;
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    padding: 12px 15px;
+    border-radius: 6px;
+    resize: vertical;
+}
+
+.form-contact input:focus,
+.form-contact textarea:focus {
+    outline: none;
+    border-color: #b969f5;
+}
+
+.form-contact input::placeholder,
+.form-contact textarea::placeholder {
+    color: rgba(240, 248, 255, 0.5);
+}
+
+.form-contact button {
+    align-self: center;
+    cursor: pointer;
+}
