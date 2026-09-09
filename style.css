@@ -1,8 +1,13 @@
 /*selecteur universel*/
 @media (max-width: 768px) {
     .intro_texte {
-        text-align: center;
+        text-align: center !important;
         max-width: 90%;
+    }
+    
+    .bloc1 h1 {
+        text-align: center;
+        font-size: 35px; /* Réduit légèrement la police pour mieux s'adapter au mobile */
     }
 }
 
