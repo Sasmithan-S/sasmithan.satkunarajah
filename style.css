@@ -1,4 +1,11 @@
 /*selecteur universel*/
+@media (max-width: 768px) {
+    .intro_texte {
+        text-align: center;
+        max-width: 90%;
+    }
+}
+
 *{  margin:0;
     padding: 0;
     box-sizing: border-box;
