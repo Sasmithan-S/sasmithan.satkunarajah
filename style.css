@@ -5,13 +5,20 @@
     text-decoration: none;
     color:aliceblue;
 }
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 body {
    background-color: #131416;
-    font-family: sans-serif; 
+    font-family: sans-serif;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .bloc1 h1 {
-    font-size: 45px;
+    font-size: clamp(28px, 8vw, 45px);
 }
 
 .nom_prénom {
@@ -25,7 +32,7 @@ body {
 
 /* MODIFICATION ICI : text-align: center ajouté */
 .bloc1 {
-    padding:15px;
+    padding: 20px 15px;
     display : flex;
     flex-direction: column;
     min-height: 100vh;
@@ -33,19 +40,23 @@ body {
     align-items: center;
     position: relative;
     font-family: Arial, sans-serif;
-    gap:40px;
-    text-align: center; 
+    gap: clamp(24px, 6vw, 40px);
+    text-align: center;
+    width: 100%;
 }
 
 .intro_texte {
-    max-width: 600px;
+    max-width: min(600px, 90vw);
+    font-size: clamp(14px, 3.6vw, 16px);
+    line-height: 1.5;
 }
 
 .photo_1 {
-    width: 200px;
-    height: 200px;         
+    width: clamp(130px, 40vw, 200px);
+    aspect-ratio: 1 / 1;
+    height: auto;
     border-radius: 50%;
-    object-fit: cover;     
+    object-fit: cover;
     display: block;
 }
 
@@ -60,7 +71,7 @@ body {
     color:white;
     font-family: Arial, sans-serif;
     background-color: black;
-    width: 150px;
+    width: clamp(130px, 40vw, 150px);
     height: 55px;
     display: flex;
     align-items: center;
@@ -93,8 +104,10 @@ body {
 
 .bouton_1{
     display: flex;
+    flex-wrap: wrap;
     padding: 10px;
-    gap: 50px;
+    gap: clamp(20px, 6vw, 50px);
+    justify-content: center;
 }
 
 .box{
@@ -110,6 +123,22 @@ body {
     -webkit-appearance: none;
     background: #131416 ;
     position: relative;
+}
+
+@media (max-width: 480px) {
+    #checkbox {
+        width: 44px;
+        height: 44px;
+    }
+
+    .menu .menuItems {
+        width: 44px;
+        height: 44px;
+    }
+
+    .menu .menuItems i {
+        font-size: 1.3em;
+    }
 }
 
 #checkbox:hover, .menu .menuItems:hover{
@@ -250,14 +279,12 @@ body {
     font-size: 20px;
 }
 
-@media (max-width: 768px) {
-    .intro_texte {
-        text-align: center !important;
-        max-width: 90%;
+@media (max-width: 480px) {
+    .bloc1 {
+        gap: 24px;
     }
-    
-    .bloc1 h1 {
-        text-align: center;
-        font-size: 35px;
+
+    .bouton_1 {
+        gap: 16px;
     }
 }
